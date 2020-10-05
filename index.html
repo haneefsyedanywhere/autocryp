@@ -439,5 +439,15 @@
         </svg>
     </footer>
     <script src="./JS/script.js"></script>
+        <script>
+if ('loading' in HTMLImageElement.prototype) { 
+    // Browser supports `loading`..
+    console.log('present');
+} else {
+   // Fetch and apply a polyfill/JavaScript library
+   // for lazy-loading instead.
+        console.log('Absent');
+}
+</script>
 </body>
 </html>
